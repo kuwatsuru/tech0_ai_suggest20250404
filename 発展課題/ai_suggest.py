@@ -5,8 +5,12 @@ import difflib
 from dotenv import load_dotenv
 import streamlit as st
 
+#Streamlit cloud用にキー読み込み
+api_key = st.secrets.openai.OPENAI_API_KEY
+client = openai.OpenAI(api_key=api_key)
+
 # .env を読み込む
-load_dotenv(dotenv_path=r"C:\Users\kosuk\Documents\Programing\python_files\Tech0_202504_アプリ開発\発展課題\.env.vb")
+# load_dotenv(dotenv_path=r"C:\Users\kosuk\Documents\Programing\python_files\Tech0_202504_アプリ開発\発展課題\.env.vb")
 
 # 環境変数から OpenAI API キーを取得
 api_key = os.getenv("OPENAI_API_KEY")
