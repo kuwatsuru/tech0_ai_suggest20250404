@@ -100,7 +100,7 @@ def suggest_ideas_with_rag_and_function_call(want_title):
     リファレンス情報をプロンプトに組み込み、関数呼び出しの仕組みを利用して
     費用、期間、最初のステップを構造化出力します。
     """
-    reference_list = load_reference_list("reference_list.json")
+    reference_list = load_reference_list("発展課題/reference_list.json")
     reference_entry = find_best_match(want_title, reference_list)
     
     if reference_entry:
