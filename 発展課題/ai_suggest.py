@@ -51,7 +51,7 @@ def suggest_ideas_with_rag(want_title):
     ユーザーのやりたいことと参考情報を組み込んだプロンプトを作成し、
     AI に回答（費用、期間、最初のステップ）をテキストで出力させます。
     """
-    reference_list = load_reference_list("reference_list.json")
+    reference_list = load_reference_list("発展課題/reference_list.json")
     reference_entry = find_best_match(want_title, reference_list)
     
     if reference_entry:
