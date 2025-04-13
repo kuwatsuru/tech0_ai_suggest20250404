@@ -175,7 +175,7 @@ def suggest_ideas_with_rag_and_function_call(want_title):
         return f"APIエラーが発生しました: {e}"
 
 # Streamlit の UI 設定
-st.title("やりたいことサジェストアプリ")
+st.title("やりたいこと支援アプリ")
 
 # ユーザーに「やりたいこと」と出力モードを入力させる
 
